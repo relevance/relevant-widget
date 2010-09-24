@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Relevant do
   
-  context '#widgets' do
+  context 'widgets' do
     around do |example|
       Relevant.unregister_all!
       example.run
