@@ -1,18 +1,8 @@
 require "tilt"
-require 'relevant/renderer'
+require "relevant/relevant"
+require "relevant/renderer"
 
 module Relevant
-  
-  @widgets = []
-  
-  def self.widgets
-    @widgets
-  end
-  
-  def self.register(widget)
-    @widgets << widget
-  end
-  
   module Widget
     
     def self.included(base)
@@ -22,6 +12,7 @@ module Relevant
     end
 
     module ClassMethods
+      
       def setup(options = {})
         widget = new
         widget.options = options
