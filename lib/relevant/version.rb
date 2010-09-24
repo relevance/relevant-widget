@@ -1,3 +1,3 @@
 module Relevant
-  Version = VERSION = "0.0.3"
+  Version = VERSION = "0.0.4"
 end
