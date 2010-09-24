@@ -11,6 +11,11 @@ module Relevant
       attr_accessor :options
     end
 
+    def to_html
+      template_handler = Tilt[self.class.template_format].new { self.class.template.strip }
+      template_handler.render(self)
+    end
+    
     module ClassMethods
       
       def setup(options = {})

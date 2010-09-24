@@ -1,6 +1,15 @@
 require 'spec_helper'
 
 describe Relevant::Widget do
+  describe "to_html" do
+    it "renders the widgets template" do
+      TestWidget.template "Hello <%= @options[:name] %>"
+      TestWidget.template_format :erb
+      widget = TestWidget.setup(:name => 'Mr. Roboto')
+      widget.to_html.should == "Hello Mr. Roboto"
+    end
+  end
+  
   describe "options" do
     it "tracks the types for form building" do
       TestWidget.available_options[:name].should == String
