@@ -12,7 +12,7 @@ begin
     gemspec.homepage = "http://github.com/relevance/relevant-widget"
     gemspec.authors = ["Jared Pace", "Rob Sanheim"]
     gemspec.add_dependency "tilt", "1.1"
-    gemspec.add_dependency "active_support", "~> 3.0.0"
+    gemspec.add_dependency "activesupport", "~> 3.0.0"
     gemspec.add_development_dependency "rspec", "~> 2.0.0.beta.22"
   end
   Jeweler::GemcutterTasks.new
@@ -24,3 +24,5 @@ end
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
+
+task :full_release => [:check_dependencies, :spec, :release]
