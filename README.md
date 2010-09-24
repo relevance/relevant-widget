@@ -10,3 +10,4 @@ In order for Relevant to be aware of your widget you will need to register it. Y
 
     Relevant.register FooWidget
     
+
