@@ -1,6 +1,5 @@
 require "tilt"
 require "relevant/relevant"
-require "relevant/renderer"
 
 module Relevant
   module Widget
