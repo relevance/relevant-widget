@@ -14,6 +14,8 @@ begin
     gemspec.add_dependency "tilt", "1.1"
     gemspec.add_development_dependency "rspec", "~> 2.0.0.beta.22"
   end
+  Jeweler::GemcutterTasks.new
+  
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"
 end
