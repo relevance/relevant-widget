@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{relevant-widget}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jared Pace", "Rob Sanheim"]
@@ -20,12 +20,10 @@ Gem::Specification.new do |s|
      "README.md",
      "Rakefile",
      "lib/relevant/relevant.rb",
-     "lib/relevant/renderer.rb",
      "lib/relevant/version.rb",
      "lib/relevant/widget.rb",
      "relevant-widget.gemspec",
      "spec/relevant/relevant_spec.rb",
-     "spec/relevant/renderer_spec.rb",
      "spec/relevant/widget_spec.rb",
      "spec/spec_helper.rb"
   ]
@@ -36,7 +34,6 @@ Gem::Specification.new do |s|
   s.summary = %q{Base widget class for your mind!}
   s.test_files = [
     "spec/relevant/relevant_spec.rb",
-     "spec/relevant/renderer_spec.rb",
      "spec/relevant/widget_spec.rb",
      "spec/spec_helper.rb"
   ]
