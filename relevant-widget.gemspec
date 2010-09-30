@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{relevant-widget}
-  s.version = "0.0.6"
+  s.version = "0.0.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jared Pace", "Rob Sanheim"]
-  s.date = %q{2010-09-24}
+  s.date = %q{2010-09-29}
   s.description = %q{Base class to do widgets for the Relevant raditor}
   s.email = %q{opensource@thinkrelevance.com}
   s.extra_rdoc_files = [
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".gitignore",
+     ".rvmrc",
      "README.md",
      "Rakefile",
      "lib/relevant/relevant.rb",
