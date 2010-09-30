@@ -38,4 +38,30 @@ describe Relevant::Widget do
     end
   end
   
+  describe "label" do
+    class Relevant::Something
+      include Relevant::Widget
+    end
+    class Relevant::LongerNameWidget
+      include Relevant::Widget
+    end
+    class Relevant::SpecialSnowflake
+      include Relevant::Widget
+      label "I'm a unique snowflake"
+    end
+
+    context "default case" do
+      it "strips module namespaces and humanizes" do
+        Relevant::Something.label.should == "Something"
+        Relevant::LongerNameWidget.label.should == "Longer Name Widget"
+      end
+    end
+    
+    context "overridden label" do
+      it "uses the overide" do
+        Relevant::SpecialSnowflake.label.should == "I'm a unique snowflake"
+      end
+    end
+  end
+  
 end

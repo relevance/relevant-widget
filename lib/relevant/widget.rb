@@ -1,5 +1,5 @@
 require "tilt"
-require 'active_support/core_ext'
+require "active_support/core_ext"
 require "relevant/relevant"
 
 module Relevant
@@ -39,7 +39,15 @@ module Relevant
 
       def refresh_every(seconds = nil)
         seconds.nil? ? @refresh_every : (@refresh_every = seconds)
-      end      
+      end
+      
+      def label(the_label = _default_label)
+        @label ||= the_label
+      end
+      
+      def _default_label
+        name.demodulize.gsub(/[[A-Z]]/, ' \0').strip
+      end
     end
     
   end
