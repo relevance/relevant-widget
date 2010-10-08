@@ -13,7 +13,7 @@ begin
     gemspec.authors = ["Jared Pace", "Rob Sanheim"]
     gemspec.add_dependency "tilt", "1.1"
     gemspec.add_dependency "activesupport", "~> 3.0.0"
-    gemspec.add_development_dependency "rspec", "~> 2.0.0.beta.22"
+    gemspec.add_development_dependency "rspec", "~> 2.0.0.rc"
   end
   Jeweler::GemcutterTasks.new
   
