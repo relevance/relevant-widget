@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jared Pace", "Rob Sanheim"]
-  s.date = %q{2010-09-29}
+  s.date = %q{2010-10-08}
   s.description = %q{Base class to do widgets for the Relevant raditor}
   s.email = %q{opensource@thinkrelevance.com}
   s.extra_rdoc_files = [
@@ -46,16 +46,16 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<tilt>, ["= 1.1"])
       s.add_runtime_dependency(%q<activesupport>, ["~> 3.0.0"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.0.0.beta.22"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.0.0.rc"])
     else
       s.add_dependency(%q<tilt>, ["= 1.1"])
       s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
-      s.add_dependency(%q<rspec>, ["~> 2.0.0.beta.22"])
+      s.add_dependency(%q<rspec>, ["~> 2.0.0.rc"])
     end
   else
     s.add_dependency(%q<tilt>, ["= 1.1"])
     s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
-    s.add_dependency(%q<rspec>, ["~> 2.0.0.beta.22"])
+    s.add_dependency(%q<rspec>, ["~> 2.0.0.rc"])
   end
 end
 
