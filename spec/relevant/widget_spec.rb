@@ -63,5 +63,12 @@ describe Relevant::Widget do
       end
     end
   end
+
+  describe "setup" do
+    it "automagically converts whitespace options to nils" do
+      TestWidget.setup(:name => " ").options[:name].should be_nil
+      TestWidget.setup(:name => "").options[:name].should be_nil
+    end
+  end
   
 end

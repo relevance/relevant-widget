@@ -20,7 +20,7 @@ module Relevant
       
       def setup(options = {})
         widget = new
-        widget.options = options
+        widget.options = options.reject{|key,val| val.blank?}
         
         widget
       end
